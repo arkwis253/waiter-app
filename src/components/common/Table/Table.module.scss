@@ -1,0 +1,21 @@
+.table {
+    display: flex;
+    align-items: baseline;
+    border-bottom: solid 1px #c0c0c0;
+
+    .header{
+        margin: 1.2rem 1.2rem 1.2rem 0;
+        font-size: 1.6rem;
+    }
+
+    .status span {
+        font-weight: bold;
+    }
+
+    .btn {
+        margin-left: auto;
+    }
+}
+
+
+
