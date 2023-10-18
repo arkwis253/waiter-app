@@ -1,5 +1,5 @@
 import styles from './TableForm.module.scss';
-import { useParams, Navigate } from 'react-router-dom';
+import { useParams, Navigate, useNavigate } from 'react-router-dom';
 import { Button, Form, Col, Row } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import clsx from 'clsx';
@@ -11,8 +11,10 @@ const TableForm = () => {
 	const getTable = (tables, tableId) => {
 		return tables.find(table => table.id === tableId);	
 	};
+
 	
 	const dispatch = useDispatch();
+	const navigate = useNavigate();
 	const {id} = useParams();
 	const table = useSelector(state => getTable(state.tables, parseInt(id)));
 
@@ -57,7 +59,7 @@ const TableForm = () => {
 			setErrorMessage('Some of the value is not a number');
 		} else {
 			dispatch(updateTablesRequest(formValues, id));
-			return <Navigate to="/" />
+			navigate('/');
 		}
 	}
 
