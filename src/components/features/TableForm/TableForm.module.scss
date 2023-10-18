@@ -1,0 +1,45 @@
+.title {
+    margin: 1.5rem 0;
+}
+
+.row {
+    margin: 1rem 0;
+}
+
+.ppl {
+    display: flex;
+    align-items: center;
+
+    span {
+        margin-inline: 0.5rem;
+    }
+}
+
+.btn {
+    margin-top: 1rem ;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.bill {
+    display: flex;
+    align-items: center;
+    span {
+        margin-inline: 0.2rem;
+    }
+}
+
+.hide {
+    display: none !important;
+}
+
+.active {
+    display: flex;
+}
+
+.error {
+    color: red;
+    font-size: 1.2rem;
+}
