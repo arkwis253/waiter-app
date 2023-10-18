@@ -57,6 +57,7 @@ const TableForm = () => {
 			setErrorMessage('Some of the value is not a number');
 		} else {
 			dispatch(updateTablesRequest(formValues, id));
+			return <Navigate to="/" />
 		}
 	}
 
